@@ -13,19 +13,25 @@ body {
 
 /* https://matthewjamestaylor.com/2-column-layouts */
 /* container */
-.two-columns {
-    display: flex;
+.responsive-two-column-grid {
+    display: block;
 }
 
 /* columns */
-.two-columns > * {
-    width: 50%;
+/* .responsive-two-column-grid > * {
+    padding: 1em;
+} */
+
+.responsive-two-column-grid img {
+    width: 90%;
 }
 
-.two-columns div,
-img {
-    padding-left: 0.2em;
-    padding-right: 0.2em;
+/* tablet breakpoint */
+@media (min-width: 768px) {
+    .responsive-two-column-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 h3 {
@@ -38,11 +44,10 @@ ul {
 }
 
 footer {
-    padding-top: 0.4em;
     text-align: center;
     font-size: small;
 }
 
 footer img {
-    width: 20%;
+    width: 16%;
 }
