@@ -17,11 +17,12 @@ body {
     display: block;
 }
 .responsive-two-column-grid div {
-    padding-left: 0.2em;
-    padding-right: 0.2em;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
 }
 .responsive-two-column-grid img {
     width: 100%;
+    border-radius: 10%;
 }
 /* tablet breakpoint */
 @media (min-width: 768px) {
