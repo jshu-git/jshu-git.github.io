@@ -1,8 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
-
 html {
-    font-size: 14px;
-    font-family: Inconsolata;
+    font-size: medium;
+    font-family: "Bitter";
+    background-color: rgb(255, 244, 200);
 }
 
 body {
@@ -18,26 +17,32 @@ body {
     display: flex;
 }
 
-.two-columns div,
-img {
-    padding-left: 0.2rem;
-    padding-right: 0.2rem;
-}
-
 /* columns */
 .two-columns > * {
     width: 50%;
 }
 
-ul {
-    padding-left: 1.2rem;
+.two-columns div,
+img {
+    padding-left: 0.2em;
+    padding-right: 0.2em;
 }
 
-footer div {
-    padding-top: 1em;
+h3 {
+    margin-top: 0em;
+    margin-bottom: 0.2em;
+}
+
+ul {
+    padding-left: 1.2em;
+}
+
+footer {
+    padding-top: 0.4em;
     text-align: center;
+    font-size: small;
 }
 
 footer img {
-    width: 20%;
+    width: 15%;
 }
