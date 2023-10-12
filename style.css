@@ -4,15 +4,13 @@ html {
     background-color: #fbf0d9;
 }
 
-body {
+.index-body {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
-
 /* https://matthewjamestaylor.com/2-column-layouts */
-/* container */
 .responsive-two-column-grid {
     display: block;
 }
@@ -31,19 +29,45 @@ body {
         grid-template-columns: 1fr 1fr;
     }
 }
-
-h3 {
+.responsive-two-column-grid h3 {
     margin-top: 0em;
     margin-bottom: 0.2em;
 }
-
-p {
+.responsive-two-column-grid p {
     margin-top: 0em;
     margin-bottom: 0em;
 }
-
-ul {
+.responsive-two-column-grid ul {
     margin-top: 0.4em;
     margin-bottom: 0.4em;
     padding-left: 1.2em;
+}
+
+/* https://blog.logrocket.com/responsive-image-gallery-css-flexbox/ */
+.gallery-body {
+    margin: 0;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 0.4em;
+    padding-left: 8em;
+    padding-right: 8em;
+}
+.gallery > li {
+    flex: auto;
+    height: 300px;
+    position: relative;
+}
+.gallery::after {
+    content: "";
+    flex-grow: 999;
+}
+.gallery li img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    border-radius: 5%;
 }
