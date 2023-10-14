@@ -22,13 +22,6 @@ html {
     width: 100%;
     border-radius: 10%;
 }
-/* tablet breakpoint */
-@media (min-width: 768px) {
-    .responsive-two-column-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-}
 .responsive-two-column-grid h3 {
     margin-top: 0em;
     margin-bottom: 0.2em;
@@ -41,6 +34,18 @@ html {
     margin-top: 0.4em;
     margin-bottom: 0.4em;
     padding-left: 1.2em;
+}
+.responsive-two-column-grid ul li ul {
+    margin-top: 0em;
+    margin-bottom: 0em;
+    padding-left: 1.2em;
+}
+/* tablet breakpoint */
+@media (min-width: 768px) {
+    .responsive-two-column-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 /* https://blog.logrocket.com/responsive-image-gallery-css-flexbox/ */
