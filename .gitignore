@@ -1,4 +1,2 @@
-# latex
 static/resume/*
-!static/resume/*.tex
 !static/resume/*.pdf
